@@ -34,15 +34,15 @@ html {
 }
 
 #nav li {
-    display: inline-block;
+    display: inline-block; /* tạo khối */
 }
 
 #nav li a {
     color: #fff;
-    text-decoration: none;
-    line-height: 46px;
+    text-decoration: none;  /* Tắt gạch chân dòng ở thẻ a */
+    line-height: 46px; /* Chiều cao của dòng ( dòng được bôi đen ) */
     padding: 0 24px;
-    display: inline-block;
+    display: inline-block; /* tạo khối cho thẻ a */
 }
 
 #nav li:hover a {
