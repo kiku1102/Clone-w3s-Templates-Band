@@ -29,29 +29,55 @@ html {
     background-color: #000;
 }
 
-#nav {
-
+#nav, .subnav {
+    list-style-type: none;
 }
 
-#nav li {
+#nav > li {
     display: inline-block; /* tạo khối */
 }
 
-#nav li a {
+#nav li {
+    position: relative;
+}
+
+#nav > li > a {
     color: #fff;
+    text-transform: uppercase;
+}
+
+#nav li a {
+    
     text-decoration: none;  /* Tắt gạch chân dòng ở thẻ a */
     line-height: 46px; /* Chiều cao của dòng ( dòng được bôi đen ) */
     padding: 0 24px;
-    display: inline-block; /* tạo khối cho thẻ a */
+    display: block; /* tạo khối cho thẻ a */
 }
 
-#nav li:hover a {
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav > li:hover > a,
+#nav .subnav li:hover a {
     color: #000;
     background-color: #ccc;
 }
 
 #nav .subnav {
     display: none;
+    min-width: 160px;
+    top: 100%;
+    left: 0;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#nav .subnav a {
+    color: #000;
+    padding: 0 12px;
+    line-height: 38px;
 }
 
 #slider {
