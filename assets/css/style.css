@@ -21,6 +21,10 @@ html {
 3. Mầu sắc
 4. Kiểu dáng ( kiểu chữ, hình dạng, ... ) 
 */
+.clear {
+    clear: both;
+}
+
 #main {
 
 }
@@ -138,6 +142,56 @@ html {
 
 #content {
 
+}
+
+#content .content-section {
+    width: 800px;
+    padding: 64px 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content .section-heading {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 4px;
+}
+
+#content .section-sub-heading {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 25px;
+    font-style: italic;
+    opacity: 0.6; /* Độ trong suốt của mầu */ 
+}
+
+#content .about-text {
+    margin-top: 25px;
+    font-size: 15px;
+    text-align: justify; /* Text căn đều 2 bên */
+    line-height: 1.4; /* Tiếng Việt nên để 1.6 */
+}
+
+#content .member-list {
+    margin-top: 48px;
+}
+
+#content .member-item {
+    float: left;
+    width: calc(100% / 3);
+    /* width: 33.33333%; */
+    text-align: center;
+}
+
+#content .member-name {
+    font-size: 15px;
+}
+
+#content .member-img {
+    margin-top: 15px;
+    width: 154px;
+    border-radius: 4px;
 }
 
 #footer {
