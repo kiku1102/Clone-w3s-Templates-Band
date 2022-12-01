@@ -303,6 +303,10 @@ html {
     justify-content: center;
 }
 
+.modal.open {
+    display: flex;
+}
+
 .modal-header{
     background-color: #009688;
     height: 130px;
@@ -320,6 +324,7 @@ html {
     max-width: calc(100% - 32px);
     min-height: 200px;
     position: relative;
+    animation: modalFadeIn ease .5s;
 }
 
 .heading-icon {
@@ -380,4 +385,15 @@ html {
 
 .modal-footer a {
     color: #2196F3;
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-150px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
